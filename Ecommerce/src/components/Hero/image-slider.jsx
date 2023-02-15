@@ -32,7 +32,6 @@ class ImageSliderComponent extends React.Component {
                 showFullscreenButton={false}
                 showPlayButton={false}
                 showNav={false}
-                infinite={false}
                 />
             </div>
         );

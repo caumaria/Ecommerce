@@ -7,7 +7,6 @@ import ImageSliderComponent from './image-slider'
 const Hero = () => {    
     return (
         <div className={`flexCenter innerWidth paddings ${css.container}`}>
-            { /* img */ }
             
             <div className={`paddings ${css.img}`}>
                 <ImageSliderComponent />

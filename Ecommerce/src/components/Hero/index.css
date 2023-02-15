@@ -49,13 +49,11 @@ img {
     
 }
 
-@media (max-width:768px) {
-    
+@media (max-width:768px) {    
     .image-gallery-thumbnail.active, 
     .image-gallery-thumbnail:focus {
     border: 3px solid transparent;
-    }
-    
+    }    
 }
 
 
