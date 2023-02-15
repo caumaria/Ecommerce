@@ -31,8 +31,7 @@ const Hero = () => {
                 
                 <div className={`flexCenter ${css.wrapper}`}>
                     <div className={`yPaddings ${css.counter}`}>
-                    <button>- 0 +</button>
-                    {/* search how to do it cuz in my head the way i know how seems weird and dumb */}
+                        <button>- 0 +</button>
                     </div>
                     <button className={`flexCenter ${css.cart}`}>
                         <BsCart3 size={18} />

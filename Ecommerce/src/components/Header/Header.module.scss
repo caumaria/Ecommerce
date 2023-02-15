@@ -2,9 +2,11 @@
 
 .container {
     border-bottom: 1px solid rgb(180, 180, 180);
-    .name {
-        font-size: 1.5rem;
-        font-weight: 700;
+    .name {        
+        p {
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
     }
     .menu {
         font-size: 1rem;

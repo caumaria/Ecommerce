@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <div className={`flexCenter innerWidth ${css.container}`}>
                 <div className={`paddings flexStart ${css.name}`}>
-                    sneakers
+                    <p>sneakers</p>
                 </div>
 
                 <ul className={`flexStart ${css.menu}`}>
