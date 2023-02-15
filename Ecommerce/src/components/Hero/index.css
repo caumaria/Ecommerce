@@ -1,0 +1,71 @@
+/* 
+adicionar opacidade qdo ativo
+tirar borda azul de seleção
+*/
+
+.image-gallery-image {
+    overflow: hidden;
+}
+/* container */
+.image-gallery {
+    width: 400px;
+    height: 400px;
+}
+.image-gallery-thumbnails-container {
+    padding-left: 0;
+    margin-left: 0;
+}
+/* thumb */
+.image-gallery-slide img {
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;  
+    margin-bottom: 10px;     
+}
+
+img {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image-gallery-thumbnail-inner {
+    margin-right: 4px;
+}
+
+.image-gallery-thumbnail-inner :hover {
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+
+.fullscreen .image-gallery-slide img {
+    max-height: 100vh;
+}
+
+.image-gallery-thumbnail.active, 
+.image-gallery-thumbnail:focus, 
+.image-gallery-thumbnail:hover {
+    outline: none;
+    border: 3px solid transparent;
+    
+}
+
+@media (max-width:768px) {
+    
+    .image-gallery-thumbnail.active, 
+    .image-gallery-thumbnail:focus {
+    border: 3px solid transparent;
+    }
+    
+}
+
+
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:focus {
+    outline: none;
+    border: 3px solid transparent;
+}
+
+.image-gallery-thumbnail {
+    transition: none;
+}
+
+

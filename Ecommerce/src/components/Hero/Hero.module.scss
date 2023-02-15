@@ -1,0 +1,82 @@
+@import '../../styles/constants.scss';
+
+.container {
+    gap: 60px;
+    .text {
+        width: 400px;
+        height: 400px;
+        .tag {
+            text-transform: uppercase;
+            color: orange;
+            font-size: 12px;
+            font-weight: 550;
+            margin-bottom: 14px;
+            letter-spacing: 2px;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 42px;
+        }
+        .resume {
+            margin: 30px 0px;
+        }
+        p {
+            color: rgb(143, 143, 143);
+        }
+        .price {
+            .main {
+                color: black;
+                font-size: 32px;
+                font-weight: 600;
+            }
+            .discont {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2px;
+                width: 48px;
+                height: 26px;
+                border-radius: 6px;
+                background-color: hsl(25, 100%, 94%);
+                color: hsl(26, 100%, 55%);
+                font-weight: 700;
+            }
+            .center {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                justify-content: start;
+            }
+            .second {
+                margin-top: 6px;
+                font-weight: bold;
+                text-decoration: line-through;
+                color: rgb(180, 179, 179);
+            }
+        }
+        .wrapper {
+            gap: 12px;
+            .counter {
+                width: 25%;
+                button {
+                    width: 100%;
+                }
+                
+            }
+            .cart {
+                width: 50%;
+                padding: 1em;
+                background-color: hsl(26, 100%, 55%);
+                color: white;
+                border-radius: 10px;
+                border-color: hsl(26, 100%, 55%);
+                box-shadow: 0px 10px 5px hsl(25, 100%, 94%, 0.5);                
+                font-weight: 700;
+                gap: 10px;
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+}

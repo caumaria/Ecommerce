@@ -1,0 +1,48 @@
+@import '../../styles/constants.scss';
+
+.container {
+    border-bottom: 1px solid rgb(180, 180, 180);
+    .name {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .menu {
+        font-size: 1rem;
+        list-style: none;
+        gap: 1.5rem;
+        cursor: pointer;
+        color: grey;
+
+        li {
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .icons {
+        gap: 2rem;
+        align-self: flex-end;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .menuIcon {        
+            cursor: pointer;
+        }
+        .personIcon {
+            img {
+                width: 38px;
+                height: 38px;
+                border: 2px solid hsl(26, 100%, 55%);
+                border-radius: 999%;
+                cursor: pointer;
+            }
+        }
+    }    
+}
