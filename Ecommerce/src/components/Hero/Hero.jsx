@@ -29,7 +29,7 @@ const Hero = () => {
                     <p className={css.second}>$250.00</p>
                 </div>
                 
-                <div className={`flexCenter ${css.wrapper}`}>
+                {/* <div className={`flexCenter ${css.wrapper}`}>
                     <div className={`yPaddings ${css.counter}`}>
                         <button>- 0 +</button>
                     </div>
@@ -37,7 +37,7 @@ const Hero = () => {
                         <BsCart3 size={18} />
                         <p>Add to cart</p>
                     </button>
-                </div>
+                </div> */}
                 
             </div>
         </div>
