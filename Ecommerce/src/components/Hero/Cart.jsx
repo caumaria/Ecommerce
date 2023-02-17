@@ -36,7 +36,7 @@ function totalReducer(state, action) {
   if(action.type === 'add') {
     return state + action.price;
   }
-  return state - action.price
+  return state - action.price;
 }
 
 
@@ -46,15 +46,11 @@ export default function Product() {
 
   
   function add(product) {
-    const { name, price } = product;
     setCart({ product, type: 'add' });
-    setTotal({ price, type: 'add' });
   }
 
   function remove(product) {
-    const { name, price } = product;
     setCart({ product, type: 'remove' });
-    setTotal({ price, type: 'remove' });
   } 
 
   function getTotal(cart) {
