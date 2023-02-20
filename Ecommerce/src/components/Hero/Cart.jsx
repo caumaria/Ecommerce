@@ -2,6 +2,33 @@ import React, { useReducer } from 'react'
 import { BsCart3 } from 'react-icons/Bs';
 import css from './Hero.module.scss'
 
+export default function Cart() {
+  const text = "Autumn Limited Edition sneakers"
+
+  return <>
+    <article>
+      <h2>Cart</h2>
+      <div>
+        <img src="image-product-1.jpg"/>
+        <ul>
+          <li>{text}</li>
+          <li>$125.00 x 3 <span>$375.00</span></li>
+        </ul>
+
+        <button>
+          🗑
+        </button>
+      </div>
+
+      <button>Checkout</button>
+    </article>
+  </>
+}
+
+/* -----starting point-----
+ok
+ok 
+
 const currencyOptions = {
   minimumFractionDigits: 2,
   maximumFractionDigits: 2,
@@ -32,21 +59,15 @@ function cartReducer(state, action) {
   }
 }
 
-function totalReducer(state, action) {
-  if(action.type === 'add') {
-    return state + action.price;
-  }
-  return state - action.price;
-}
-
 
 export default function Product() {
   const [cart, setCart] = useReducer(cartReducer, []);
-  const [total, setTotal] = useReducer(totalReducer, 0);
+  const [total, setTotal] = useReducer(getTotal, 0);
 
   
   function add(product) {
     setCart({ product, type: 'add' });
+    console.log(product)
   }
 
   function remove(product) {
@@ -106,6 +127,6 @@ export default function Product() {
     </div>
   
     
-  );
-}
+  ); 
+}*/
 
