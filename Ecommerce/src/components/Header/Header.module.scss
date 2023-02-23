@@ -33,9 +33,28 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-
-        .menuIcon {        
-            cursor: pointer;
+        position: relative;
+        .menuIcon {  
+            cursor: pointer; 
+            z-index: 1;  
+            .badge {       
+                position: absolute;         
+                background-color: hsl(26, 100%, 55%);
+                border: hsl(26, 100%, 55%);
+                border-radius: 38%;
+                color: white;
+                width: 1rem;
+                padding: 0 0.6rem;
+                font-size: 10px;
+                font-weight: 700;
+                top: 34%;
+                z-index: 99;
+                left: 71%;
+                display: flex;
+                align-items: center;
+                justify-content: center;   
+            }   
+            
         }
         .personIcon {
             img {

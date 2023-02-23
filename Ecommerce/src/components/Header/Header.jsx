@@ -2,7 +2,9 @@ import React from 'react'
 import css from './Header.module.scss'
 import { BsCart3 } from 'react-icons/Bs';
 
-const Header = () => {
+
+const Header = (props) => {
+    const {countCartItems} = props;
     return (
         <div>
             <div className={`flexCenter innerWidth ${css.container}`}>
@@ -22,6 +24,11 @@ const Header = () => {
                 <div className={`paddings ${css.icons}`}>
                     <div className={css.menuIcon}>
                         <BsCart3 size={20} />
+                        {countCartItems ? (
+                            <button className={css.badge}>{countCartItems}</button>
+                        ) : (
+                            ''
+                        )}
                     </div>
 
                     <div className={css.personIcon}>

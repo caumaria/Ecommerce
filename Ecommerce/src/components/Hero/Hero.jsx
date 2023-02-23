@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { BsCart3 } from 'react-icons/Bs'
+import React from 'react'
 import css from './Hero.module.scss'
 import ImageSliderComponent from './image-slider'
 
 
-const Hero = () => {    
+
+const Hero = () => {
     return (
         <div className={`flexCenter innerWidth paddings ${css.container}`}>
             
@@ -28,16 +28,8 @@ const Hero = () => {
 
                     <p className={css.second}>$250.00</p>
                 </div>
-                
-                {/* <div className={`flexCenter ${css.wrapper}`}>
-                    <div className={`yPaddings ${css.counter}`}>
-                        <button>- 0 +</button>
-                    </div>
-                    <button className={`flexCenter ${css.cart}`}>
-                        <BsCart3 size={18} />
-                        <p>Add to cart</p>
-                    </button>
-                </div> */}
+               
+            
                 
             </div>
         </div>

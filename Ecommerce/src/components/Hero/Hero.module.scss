@@ -98,3 +98,51 @@
     
     
 }
+
+//cart
+.cartPopUp {
+    width: 360px;
+    height: auto;
+    padding: 20px 20px;
+    .titleCart {
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(143, 143, 143, 0.4);
+    }
+    .cartCheckout {
+        margin: 20px 0px;
+        gap: 14px;
+        .cartImg {
+            width: 40px;
+            height: 40px;
+        }
+        ul li {
+            list-style-type: none;
+            color: rgb(143, 143, 143);
+        }
+        span {
+            font-weight: 700;
+            color: black;
+        }
+        button {
+            background-color: white;
+            border: none;
+            font-size: 28px;
+            color: rgb(143, 143, 143);
+        }
+    }
+    
+    .btnCheckout {
+        margin: 20px 0px;
+        gap: 8px;
+        padding: 1em 6em;
+        width: 100%;          
+        color: white;                
+        font-weight: 700;
+        background-color: hsl(26, 100%, 55%);
+        border-color: transparent;
+        box-shadow: 0px 10px 5px hsl(25, 100%, 94%, 0.8);
+        border-radius: 10px;  
+        cursor: pointer;          
+    }
+}
+

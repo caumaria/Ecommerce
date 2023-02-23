@@ -24,7 +24,7 @@ tirar borda azul de seleção
 }
 
 img {
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
