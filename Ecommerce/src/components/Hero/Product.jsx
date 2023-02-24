@@ -3,32 +3,48 @@ import { BsCart3 } from 'react-icons/Bs';
 import css from './Hero.module.scss'
 
 export default function Product(props) {
-  const { product, onAdd, onRemove } = props;
+  const { item, product, onAdd, onRemove } = props;
 
   return (
     <div className={`yPaddings ${css.wrapper}`}>
+        <div className={css.totalCart}>            
+              
+                <div className={`flexCenter ${css.btns}`}>
+                  <button
+                   className={css.remove}
+                   onClick={() => onRemove(item)}
+                  >
+                    -
+                  </button>
+                  {item ? (
+                    <span>{item.qty}</span>
+                    ) : (
+                      <span>0</span>
+                    ) 
+                  }
+                  <button
+                   className={css.add}
+                   onClick={() => onAdd(item)}
+                  >
+                     +
+                  </button>
+                </div>
+              
+                <div>
+                  <button 
+                  onClick={() => onAdd(product)}
+                  className={`flexCenter ${css.btnAdd}`}
+                  >
+                    <BsCart3 size={18} />
+                    <p>Add to cart</p>
+                  </button>
+                </div>                
+                         
+        </div>          
+              
 
-      <div className={`flexCenter ${css.itens}`}>
-
-        <div className={`flexCenter ${css.btns}`}>
-          <button onClick={() => onRemove(product)}>
-            -
-          </button>
-          <div className={css.totalCart}>
-            0
-          </div>
-          <button onClick={() => onAdd(product)}>
-           +
-          </button>
-        </div>        
-
-        <div className={css.btnAdd}>
-          <button className={`flexCenter ${css.add}`}>
-            <BsCart3 size={18} />
-            <p>Add to cart</p>
-          </button>
-        </div>
-      </div>
+        
+      
     </div>
   )
 }
